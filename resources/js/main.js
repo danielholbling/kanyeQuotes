@@ -7,7 +7,7 @@ async function getQuote(){
 
 
 async function getImageList(){
-    let data = await fetch("https://api.tenor.com/v1/search?key=7HBRA4N2MEHV&q=kanye+west&limit=50");
+    let data = await fetch("https://api.tenor.com/v1/search?key=7HBRA4N2MEHV&q=kanye+west&limit=50&media_filter=minimal");
     let json = data.json();
     return json;
 }
@@ -20,9 +20,9 @@ async function loadNewImageAndQuote(){
     randomIndex = Math.floor(Math.random()*50);
     img.src = imageArray[randomIndex].media[0].gif.url;
     let quoteData = await getQuote();
-    quote.innerText = quoteData.quote;
+    quote.innerText = quoteData.quote.toUpperCase();
 }
-let gurgel;
+
 (async () => {
     await loadNewImageAndQuote()
 })()

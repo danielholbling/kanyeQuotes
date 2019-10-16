@@ -25,7 +25,7 @@ body {
 
 .mid {
     display: flex;
-    background:rgba(255,255,255,0.5);
+    background:rgba(255,255,255,0.2);
     width: 70vw;
     padding: 3em;
     box-shadow: 0 0 3em rgba(0,0,0,.15);
@@ -65,5 +65,16 @@ body {
 }
 
 img {
-    max-width: 25%;
+    max-width: 35%;
+    min-width: 30%;
+    margin:0 2rem 0 0;
+}
+
+.quote {
+    margin: auto;
+    font-family: 'Cabin';
+    font-size: 3em;
+    color: white;
+    letter-spacing: 0.3rem;
+    text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px, #FF2D95 0px 0px 75px;
 }
