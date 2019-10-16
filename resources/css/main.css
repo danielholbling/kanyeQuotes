@@ -24,7 +24,8 @@ body {
 }
 
 .mid {
-    background: white;
+    display: flex;
+    background:rgba(255,255,255,0.5);
     width: 70vw;
     padding: 3em;
     box-shadow: 0 0 3em rgba(0,0,0,.15);
@@ -61,4 +62,8 @@ body {
     font-family: "Open Sans";
     font-weight: 100;
     font-style: italic;
+}
+
+img {
+    max-width: 25%;
 }
