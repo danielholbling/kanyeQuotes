@@ -1,7 +1,10 @@
 async function getQuote(){
-    let data = await fetch("https://api.kanye.rest");
+    let data = await fetch("https://api.kanye.rest/?format=json");
     let json = data.json();
-    return json;
+    console.log(json);
+    let quote = json.quote;
+    console.log(quote);
+    return quote;
 }
 
 
@@ -11,10 +14,16 @@ async function getImageList(){
     return json;
 }
 
-
-(async () => { 
+async function loadNewImageAndQuote(){
+    let iframe = document.querySelector('iframe');
+    let quote = document.querySelector('.quote');
     let imageArray = await getImageList();
     imageArray = imageArray.data;
-    console.log(await getQuote())
-    console.log(imageArray[0].embed_url)
+    randomIndex = Math.floor(Math.random()*25);
+    iframe.src = imageArray[randomIndex].embed_url;
+    quote.innerText = await getQuote();
+}
+
+(async () => { 
+    await loadNewImageAndQuote()
 })()
