@@ -1,0 +1,64 @@
+:root {
+    --gradient: linear-gradient(45deg, #ee6352, purple, #ee8b52);
+}
+
+@keyframes bg-animation {
+    0% {background-position: left}
+    50% {background-position: right}
+    100% {background-position: left}
+}
+
+body {
+    font-family: basic-sans, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.125em;
+    line-height: 1.6;
+    color: #333;
+    background: #ddd;
+    background-size: 400%;
+    background-image: var(--gradient);
+    animation: bg-animation 60s infinite;
+}
+
+.mid {
+    background: white;
+    width: 70vw;
+    padding: 3em;
+    box-shadow: 0 0 3em rgba(0,0,0,.15);
+}
+
+.insult {
+    margin: 0 0 .5em;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 3rem;
+    color: #ee6352;
+    line-height: .8;
+    margin: 0;
+}
+
+.bottom {
+    text-align: right;
+}
+
+.another {
+    color: white;
+    padding: 0;
+    margin: -5px 5px 0 0;
+    font-family: "Open Sans";
+    font-weight: 100;
+    font-style: italic;
+}
+
+.title {
+    color: white;
+    padding: 0;
+    margin: 0;
+    margin-bottom: -3px;
+    font-family: "Open Sans";
+    font-weight: 100;
+    font-style: italic;
+}
