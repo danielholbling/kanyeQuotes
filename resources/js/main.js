@@ -25,4 +25,7 @@ async function loadNewImageAndQuote(){
 
 (async () => {
     await loadNewImageAndQuote()
+    let anotherOne = document.querySelector('.another');
+    anotherOne.addEventListener('click', loadNewImageAndQuote())
 })()
+

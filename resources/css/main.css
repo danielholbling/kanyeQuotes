@@ -29,6 +29,7 @@ body {
     width: 70vw;
     padding: 3em;
     box-shadow: 0 0 3em rgba(0,0,0,.15);
+    border-radius: 3px;
 }
 
 .insult {
@@ -51,7 +52,9 @@ body {
     margin: -5px 5px 0 0;
     font-family: "Open Sans";
     font-weight: 100;
+    text-decoration: none;
     font-style: italic;
+
 }
 
 .title {
@@ -67,7 +70,11 @@ body {
 img {
     max-width: 35%;
     min-width: 30%;
-    margin:0 2rem 0 0;
+    margin:2rem;
+    border-radius: 10px;
+    border: 2px solid black;
+    transform: rotate(356deg) translate(-24px, -0px) skew(-6deg, 0deg);
+    box-shadow: 5px 5px 15px 5px #FF8080, -9px 5px 15px 5px #FFE488, -7px -5px 15px 5px #8CFF85, 12px -5px 15px 5px #80C7FF, 12px 10px 15px 7px #E488FF, -10px 10px 15px 7px #FF616B, -10px -7px 27px 1px #8E5CFF, -10px 5px 10px 5px rgba(0,0,0,0);
 }
 
 .quote {
